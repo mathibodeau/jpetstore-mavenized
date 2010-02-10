@@ -2,11 +2,16 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.pyxis</groupId>
+		<artifactId>jpetstore</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
 	<groupId>com.pyxis</groupId>
-	<artifactId>jpetstore-mavenized</artifactId>
+	<artifactId>jpetstore-app</artifactId>
 	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>petstore</name>
+	<name>jpetstore-app</name>
 	<url>http://maven.apache.org</url>
 
 	<dependencies>
@@ -48,6 +53,13 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.11</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+		  	<groupId>hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+		  	<version>1.8.0.7</version>
 			<scope>runtime</scope>
 		</dependency>
 
